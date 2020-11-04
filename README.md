@@ -32,14 +32,14 @@ Use case remains same as previous release.
 *	Usage Launch Template for AutoScale group instead of Launch Configuration
 *	All Target Groups under External-LB can be updated with Gig0/1 interface IP(Allowing user to have more than one ports on LB)
 *	Provided Infrastructure template ( From scratch deployment )
-*	Custom Metric Publisher Lambda for NGFWv memory publish from FMC ( python serverless function & AWS Scheduled Event)
+*	Added Custom Metric Publisher Lambda for NGFWv memory publish from FMC ( python serverless function & AWS Scheduled Event)
 *	Migrated all constants to constant.py file
 *	Made it easier to deploy ( removed nested stack concept )
 *	Removed custom scaling ( no exceptional value addition as of now )
 *	Separate Thresholds for CPU & Memory provided
 *	Optionally can choose CPU only, Memory only or Both for scaling
-*	Avoid too many emails to User (Introduce a new SNS topic only for User publication )
-*	Tags for EC2 instance & AutoScale group with current status
+*	Avoided too many emails to User (Introduce a new SNS topic only for User publication )
+*	Tags gets created for EC2 instance & AutoScale group with current status
 
 ## Solution-design-modifications
 In this solution, <br>
